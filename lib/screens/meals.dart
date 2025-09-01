@@ -11,12 +11,13 @@ class MealsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget content = ListView.builder(
       itemCount: meals.length,
-      itemBuilder: (ctx, index) => Text(meals[index].title),
+      itemBuilder: (ctx, index) =>
+          Text(meals[index].title, style: TextStyle(color: Colors.white)),
     );
     if (meals.isEmpty) {
       content = Center(
         child: Column(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Uh oh ... nothing here",
