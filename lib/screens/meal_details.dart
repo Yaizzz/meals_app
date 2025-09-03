@@ -13,7 +13,7 @@ class MealDetailScreen extends StatelessWidget {
       appBar: AppBar(title: Text(meal.title)),
       body: SingleChildScrollView(
         child: Column(
-          // Column olsa default olarak centerlar üstüne SingleChildScrollView sararız
+          // Column olsa default olarak centerlar üstüne SingleChildScrollView sararızx
           children: [
             Image.network(
               meal.imageUrl,
